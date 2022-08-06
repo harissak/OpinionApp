@@ -1,0 +1,21 @@
+*{
+    margin: auto;
+}
+
+
+
+.list-group-item{
+    margin-bottom: 4px;
+}
+
+.badge {
+    background-color: blue;
+    font-size: 15px;
+}
+.secondGroup{
+    width: 55%;
+}
+.firstGroup{
+    width: 70%;
+    margin-bottom: 3%;
+}

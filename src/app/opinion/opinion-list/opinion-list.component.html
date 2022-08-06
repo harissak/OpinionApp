@@ -1,0 +1,6 @@
+<input class="searchListInput" placeholder=" Search for..." type="text" [(ngModel)]="filteredStatus">
+<hr>
+<app-opinion-item *ngFor="let singleOpinion of selectedOpinions | filter:filteredStatus:'aboutWho'; let i = index" 
+class="opinionList"
+[opinion]="singleOpinion"
+[indexOf]="i"></app-opinion-item>

@@ -1,0 +1,31 @@
+.opinionBox {
+
+    margin: auto;
+    margin-bottom: 2%;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 1%;
+    width: 80%;
+    align-items: center;
+}
+
+.txtArea {
+    width: 400%;
+    height: auto;
+}
+
+.input-group {
+    margin-bottom: 4px;
+}
+.radio {
+    margin-left: 3%;
+}
+
+input.ng-invalid.ng-touched
+ {
+    border: 1px solid red;
+}
+
+textarea.ng-invalid.ng-touched{
+    border: 1px solid red;
+}

@@ -1,0 +1,24 @@
+<p>Log in or register</p>
+
+
+    <div class="col-xs-12 loginForm" >
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" ngModel required #username="ngModel">                
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" name="password" ngModel required #password="ngModel" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                    <span class="help-block" *ngIf="!isValidInput">{{errorMessage}}</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-success" type="submit" [disabled]="!f.valid">Log In</button>
+                    <button class="btn btn-warning" type="button" (click)="registration()"[disabled]="!f.valid" >Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+

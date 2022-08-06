@@ -1,0 +1,35 @@
+<p>Welcome {{currentUser | uppercase}}</p>
+
+<p>Do you want to change your password or username??</p>
+
+
+    <div class="col-xs-12 loginForm" >
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="username">Username</label>
+                    <label type="text" class="form-control" >{{currentUser}}</label>             
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" name="password" ngModel required #password="ngModel" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                    <span class="help-block" *ngIf="!isValidInput">{{errorMessage}}</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-success" type="submit" [disabled]="!f.valid">Update profile</button>
+                    <button class="btn btn-danger" type="button" (click)="close()" >CLOSE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+<div class="row ">
+    <app-opinion-item *ngFor="let singleOpinion of listOfOpinions; 
+    let i = index" 
+
+[opinion]="singleOpinion"
+[indexOf]="i"></app-opinion-item>
+</div>
+
+>
+

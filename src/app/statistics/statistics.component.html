@@ -1,0 +1,27 @@
+
+<ul class="firstGroup list-group" >
+    <li class="list-group-item active d-flex justify-content-between align-items-center">
+      Number of comments:
+      <span class="badge nbrComments">{{nbrComments}}</span>
+    </li>
+    <li class="list-group-item active d-flex justify-content-between align-items-center">
+        Number of users:
+        <span class="badge nbrComments">{{nbrUsers}}</span>
+      </li>
+      <li class="list-group-item active d-flex justify-content-between align-items-center">
+        How many people were commented on:
+        <span class="badge nbrComments">{{nbrAboutWho}}</span>
+      </li>
+</ul>      
+<ul class="list-group secondGroup" >
+    <li class="list-group-item active d-flex justify-content-between align-items-center">
+      About who are comments
+      <span class="badge nbrComments">Number of comments</span>
+    </li>
+</ul>
+<ul class="list-group secondGroup" *ngFor="let maps of opinionList | keyvalue">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      {{maps.key}}
+      <span class="badge badge-primary badge-pill">{{maps.value}}</span>
+    </li>
+</ul>

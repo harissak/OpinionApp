@@ -1,0 +1,24 @@
+<div class="row opinionBox">
+    <form [formGroup]="addCommentForm" (ngSubmit)="onSubmit()" #f="ngForm">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control"
+                placeholder="Your opinion is about who?" 
+                aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                formControlName="aboutWho">
+            </div>
+            <div class="input-group">
+                <textarea class="form-control txtArea" aria-label="With textarea" 
+                placeholder="Write your opinion here"
+                formControlName="comment"></textarea>
+            </div>
+            <div class="radio">
+                <input type="radio" name="anonymous" [value]="isAnonymous" formControlName="anonymous"> Anonymous
+            </div>
+            <div class="input-group mb-3"> 
+                <label for="sel1">ATTENTION!!If you want to comment as anonymous make sure to click on ANONYMOUS radio button!</label>
+            </div>  
+            <button type="submit" class="btn btn-success" [disabled]="!f.valid">Add opinion</button>
+    </form>
+</div>
+
+

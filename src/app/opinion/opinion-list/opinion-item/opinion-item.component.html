@@ -1,0 +1,18 @@
+<div class="card singleOpinion">
+    <div class="opinionBox divBody1">
+      <a  
+      [routerLink]="['../filter','aboutWho', opinion.aboutWho]"
+      class="card-title" >
+      {{opinion.aboutWho}}</a>
+
+      <p class="card-text">{{opinion.opinionText}}</p>
+
+      <a class="btn btn-primary" 
+      [routerLink]="['../filter', 'nickName',opinion.nickName]">
+      {{opinion.nickName}}</a>
+    </div>
+    <div class="opinionBox divBody2">
+      <img class="btnDelete"  *ngIf="getCurrentUser()==opinion.nickName" src="https://img.icons8.com/fluency/48/000000/delete-forever.png" alt="Delete your opinion" (click)="deleteItem()">
+    </div>
+  </div>
+ 
