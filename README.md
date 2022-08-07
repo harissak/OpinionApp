@@ -18,6 +18,9 @@ During this project I used:
 - Template driven and Reactive forms
 
 !!! THERE IS SHORT VIDEO AS PRESENTATION ABOUT THIS APPLICATION!!
+You can simply download it and see, name is "Angular project.mp4" or simply see it on my youtube 
+channel: (video url) https://youtu.be/9k6xU1ZCUxs
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
