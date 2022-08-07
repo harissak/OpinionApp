@@ -15,15 +15,15 @@ export class OpinionService {
   
   opinionChanged = new EventEmitter<Opinion[]>();
   private opinionList: Opinion[]= [
-    new Opinion ('Nikad gore iskustvo u nasoj opcini zahvaljujuci ovoj budali Nikad gore iskustvo u nasoj opcini zahvaljujuci ovoj budali Nikad gore iskustvo u nasoj opcini zahvaljujuci ovoj budali',
-    'Mujo Mujic',
-    'samoNick'),
-    new Opinion ('Nikad gore iskustvo u nasoj opcini zahvaljujuci ovoj budali',
-    'Slavica Draguz',
-    'slavica'),
-    new Opinion ('Nikad gore iskustvo u nasoj opcini zahvaljujuci ovoj budali',
-    'Zeljko Topoljak',
-    'zeljkic')    
+    new Opinion ('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies nisl eget est tincidunt finibus. Duis elementum, nisi fermentum molestie tincidunt, diam leo molestie nisl, sed interdum orci nisl mattis odio. Integer non odio libero. Curabitur mollis lacus ligula, quis malesuada urna fermentum vitae. In posuere sapien eu dolor aliquet interdum. Suspendisse potenti. Suspendisse efficitur, erat vel consectetur facilisis, tortor mi condimentum risus, congue dapibus libero quam vitae nibh. Nullam ut dignissim diam',
+    'Charles Leclerc',
+    'profil1 test'),
+    new Opinion ('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies nisl eget est tincidunt finibus. Duis elementum, nisi fermentum molestie tincidunt, diam leo molestie nisl, sed interdum orci nisl mattis odio. Integer non odio libero. Curabitur mollis lacus ligula, quis malesuada urna fermentum vitae. In posuere sapien eu dolor aliquet interdum. Suspendisse potenti.',
+    'Carlos Sainz',
+    'profile2 test'),
+    new Opinion ('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies nisl eget est tincidunt finibus. Duis elementum, nisi fermentum molestie tincidunt, diam leo molestie nisl, sed interdum orci nisl mattis odio. Integer non odio libero. Curabitur mollis lacus ligula, quis malesuada urna fermentum vitae. In posuere sapien eu dolor aliquet interdum. Suspendisse potenti. Suspendisse efficitur, erat vel consectetur facilisis, tortor mi condimentum risus, congue dapibus libero quam vitae nibh. Nullam ut dignissim diam.',
+    'Daniel Ricciardo',
+    'profile3 test')    
   ];
 
 

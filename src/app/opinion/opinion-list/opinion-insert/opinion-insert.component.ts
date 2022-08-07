@@ -16,7 +16,7 @@ export class OpinionInsertComponent implements OnInit {
   @ViewChild('opinionAboutWho') aboutWho!: ElementRef;
   @ViewChild('anonymous') anonymous!: ElementRef;
   addCommentForm!: FormGroup;
-  isAnonymous=true;
+
   
   constructor(private serviceOpinion: OpinionService, private loginService: LoginRegistrationService, private router:Router) { }
 
@@ -24,25 +24,18 @@ export class OpinionInsertComponent implements OnInit {
 
     this.addCommentForm = new FormGroup({
       'aboutWho': new FormControl(null, Validators.required),
-      'comment':new FormControl(null, Validators.required),
-      'anonymous': new FormControl(false)
+      'comment':new FormControl(null, Validators.required)
     });
   }
 
    onSubmit() {
     const aboutWho = this.addCommentForm.value['aboutWho'];
     const opinion = this.addCommentForm.value['comment'];
-    const anonymous = this.addCommentForm.value['anonymous'];
-    let nickName;
+    const user = this.loginService.getCurrentUser().username;
+     
+    
 
-    if(anonymous){
-      nickName='Anonymous';
-    } else {
-      const user = this.loginService.getCurrentUser();
-      nickName=user.username;
-    }
-
-    const newOpinion = new Opinion(opinion,aboutWho,nickName);
+    const newOpinion = new Opinion(opinion,aboutWho,user);
     this.serviceOpinion.addOpinion(newOpinion);
     this.addCommentForm.reset();
 
