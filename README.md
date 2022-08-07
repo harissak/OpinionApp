@@ -1,4 +1,23 @@
-# OpinionPrj
+# Opinion project
+
+OPINION PROJECT is my own project where I wanted to broaden my knowledge in Angular. 
+Idea was to create app where person can easily register him self (it is needed just username and password) and after to log in and give his own opinion obout 
+someone or even something. To give opinion you have to be registered user. It is possible to change your password, to delete opinions that you wrote.
+Everyone can filter opinions by profile (registered person who wrote opinion) and see all opinions from one person or filter by "about who" opinion is writen. Also,
+it is possible to search "about who". There is also possibility to see statistical data like how many registered users are ther, hom many comments is writen and also
+to see how many time each persone were commented.
+
+During this project I used:
+- Angular and typescript (javascript also)
+- Routing
+- Pipe (one pipe created by myself)
+- Arrays
+- Maps
+- Services
+- Subjects and EventEmiters
+- Template driven and Reactive forms
+
+!!! THERE IS SHORT VIDEO AS PRESENTATION ABOUT THIS APPLICATION!!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
